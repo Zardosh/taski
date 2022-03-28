@@ -1,0 +1,22 @@
+<p style="color: green"><%= notice %></p>
+
+<h3><%= @task.title %></h3>
+
+<p><%= @task.description %></p>
+<% if @task.completed %>
+    <p><em>Task is completed</em></p>
+<% else %>
+    <p><em>Task is pending</em></p>
+<% end %>
+
+<h4>Task started: <%= @task.created_at %></h4>
+<% if @task.created_at != @task.updated_at %>
+    <h4>Task updated: <%= @task.updated_at %></h4>
+<% end %>
+
+<% unless @task.task_file.blank? %>
+    <p><%= link_to "Attachment", @task.task_file.to_s %></p>
+<% end %>
+
+<%= link_to "Edit", edit_project_task_path(@task.project_id, @task.id) %>
+<%= link_to "Back to project", project_path(@task.project_id) %>
