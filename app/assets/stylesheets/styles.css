@@ -15,3 +15,7 @@ h1 {
 p {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
+
+button {
+    margin-top: 8px
+}
