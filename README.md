@@ -1,24 +1,20 @@
-# README
+# Taski
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Project developed in the [Ruby on Rails Foundations course](https://www.udemy.com/course/how-to-learn-ruby-on-rails/).
 
-Things you may want to cover:
+## Ruby version
 
-* Ruby version
+3.1.1
 
-* System dependencies
+## Installing dependencies
 
-* Configuration
+1. `bundle install`
 
-* Database creation
+## Database creation
 
-* Database initialization
+1. `rake db:create`
+2. `rake db:migrate`
 
-* How to run the test suite
+## Running the application
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. `rails s`
